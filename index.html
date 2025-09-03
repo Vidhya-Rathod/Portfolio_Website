@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidhya Rathod - AI/ML Engineer</title>
+    <meta name="description" content="AI/ML Engineer & Developer">
+    <meta name="author" content="Vidhya Rathod">
+    <meta name="keywords" content="AI/ML Engineer & Developer">
+    
+    <meta property="og:title" content="Vidhya Rathod - AI/ML Engineer & Developer">
+    <meta property="og:description" content="AI/ML Engineer & Developer.">
+    
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <h3>Vidhya Rathod</h3>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home" class="nav-link active" data-section="home">Home</a>
+                    <a href="#about" class="nav-link" data-section="about">About</a>
+                    <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                </div>
+                
+                <!-- Action Buttons -->
+                <div class="nav-actions">
+                    <button class="btn-secondary" onclick="downloadResume()">
+                        <i data-lucide="download"></i>
+                        Resume
+                    </button>
+                    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                        <i data-lucide="moon" id="dark-icon"></i>
+                        <i data-lucide="sun" id="light-icon" style="display: none;"></i>
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobile-menu">
+                <a href="#home" class="mobile-nav-link" data-section="home">Home</a>
+                <a href="#about" class="mobile-nav-link" data-section="about">About</a>
+                <a href="#projects" class="mobile-nav-link" data-section="projects">Projects</a>
+                <a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a>
+                <button class="btn-primary mobile-resume-btn" onclick="downloadResume()">
+                    <i data-lucide="download"></i>
+                    Download Resume
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="text-gradient">Vidhya Rathod</span>
+                        </h1>
+                        <h2 class="hero-subtitle">
+                            AI/ML Engineer & Developer
+                        </h2>
+                        <p class="hero-description">
+                            Motivated AI/ML Engineer with strong skills in machine learning algorithms, data analysis, and model deployment. Seeking to contribute to innovative AI projects by applying technical expertise and continuous learning in a dynamic work environment.
+                        </p>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <button class="btn-primary" onclick="scrollToSection('contact')">
+                            Let's Work Together
+                        </button>
+                        <button class="btn-secondary" onclick="scrollToSection('about')">
+                            Learn More About Me
+                        </button>
+                    </div>
+                    
+                    <div class="hero-social">
+                        <a href="https://github.com/Vidhya-Rathod" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="mailto:vidhyamadhavrathod@gmail.com" class="social-link" aria-label="Send Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="scroll-indicator">
+                        <button class="scroll-btn" onclick="scrollToSection('about')" aria-label="Scroll to About section">
+                            <i data-lucide="arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <p>Passionate developer with a keen eye for Generative AI </p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-card">
+                        <div class="profile-card">
+                            <div class="profile-image">
+                                <img src="car.jpeg" alt="Vidhya Rathod Profile" id="car.jpeg">
+                            </div>
+                            <div class="profile-info">
+                                <h3>Vidhya Rathod</h3>
+                                <p class="bio">
+                                    I am a motivated fresher passionate about building intelligent machine learning and generative AI models. 
+                                    With a strong foundation in algorithms, data analysis, and programming, 
+                                    I am eager to apply my skills to solve real-world problems. 
+                                    Committed to continuous learning, I aim to contribute effectively to innovative AI projects and grow expertise in generative AI and related technologies.
+                        
+                                <div class="technologies">
+                                    <h4>Technologies I work with:</h4>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">javaScript</span>
+                                        <span class="tech-tag">SQL</span>
+                                        <span class="tech-tag">CSS</span>
+                                        <span class="tech-tag">Git/GitHub</span>
+                                        <span class="tech-tag">Pandas</span>
+                                        <span class="tech-tag">numpy</span>
+                                        <span class="tech-tag">CSS</span>
+                                        <span class="tech-tag">AI</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-section">
+                        <h3>Skills & Expertise</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i data-lucide="code"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Frontend Development</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="80"></div>
+                                    </div>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                            </div>
+                           
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i data-lucide="database"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Database Management</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="60"></div>
+                                    </div>
+                                    <span class="skill-percentage">60%</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i data-lucide="smartphone"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Product Building</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="90"></div>
+                                    </div>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cta-section">
+                            <p>Interested in working together?</p>
+                            <button class="btn-primary" onclick="scrollToSection('contact')">
+                                Get In Touch
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Projects</h2>
+                    <p>A showcase of my recent work and creative solutions</p>
+                </div>
+                
+                <!-- Featured Projects -->
+                <div class="featured-projects">
+                    <div class="project-card featured">
+                        <div class="project-image">
+                            <img src="portfolio.png" alt="Portfolio Website" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View live demo">
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                    <a href="https://github.com/Vidhya-Rathod/Portfolio_Website" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View source code">
+                                        <i data-lucide="github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Portfolio Website</h3>
+                            <p class="project-description">
+                                A portfolio website is a simple online platform built using HTML, CSS, and JavaScript to showcase an individual's work, skills, and achievements. It acts as a digital resume or business card, featuring sections like best work, About Me, and contact details, creating a clear and professional impression.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">CSS</span>
+                                <span class="tech-badge">Javascript</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card featured">
+                        <div class="project-image">
+                            <img src="task.png" alt="Task Remainder App" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View live demo">
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                    <a href="https://github.com/Vidhya-Rathod/Task-remainder-app" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View source code">
+                                        <i data-lucide="github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Task Remainder App</h3>
+                            <p class="project-description">
+                                A task reminder app with PWA support is a web-based application built using HTML, CSS, and JavaScript that provides app-like features such as offline access, push notifications, and installability on devices. It helps users manage tasks with timely alerts, works seamlessly across devices, and loads quickly even with poor internet connectivity, offering a native app experience without requiring app store downloads.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">CSS</span>
+                                <span class="tech-badge">Javascript</span>
+                                <span class="tech-badge">json</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <p>Let's discuss your next project and bring your ideas to life</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:vidhyamadhavrathod@gmail.com">vidhyamadhavrathod@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:">+00000 00000</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <span>India</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" class="form-input" required></textarea>
+                                <span class="error-message" id="message-error"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary" id="submit-btn">
+                                <span id="submit-text">Send Message</span>
+                                <i data-lucide="send" id="submit-icon"></i>
+                            </button>
+                            
+                            <div id="form-message" class="form-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Vidhya Rathod</h3>
+                    <p>Crafting digital experiences that inspire and engage</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/Vidhya-Rathod" target="_blank" rel="noopener noreferrer" class="footer-social-link github" aria-label="GitHub Profile">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="footer-social-link linkedin" aria-label="LinkedIn Profile">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="footer-social-link twitter" aria-label="Twitter Profile">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                        <a href="mailto:vidhyamadhavrathod@gmail.com" class="footer-social-link email" aria-label="Send Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home" onclick="scrollToSection('home')">Home</a>
+                    <a href="#about" onclick="scrollToSection('about')">About</a>
+                    <a href="#projects" onclick="scrollToSection('projects')">Projects</a>
+                    <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i data-lucide="mail"></i> E-mail </p>
+                    <p><i data-lucide="phone"></i> +00000 00000</p>
+                    <p><i data-lucide="map-pin"></i> India</p>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to get the latest updates and insights</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input" id="newsletter-email">
+                        <button type="button" class="newsletter-btn" onclick="subscribeNewsletter()">
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; <span id="current-year"></span> Vidhya Rathod. All rights reserved.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#" onclick="alert('Privacy Policy page would be here')">Privacy Policy</a>
+                    <a href="#" onclick="alert('Terms of Service page would be here')">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll to Top Button -->
+        <button id="scroll-top" class="scroll-top-btn" onclick="scrollToTop()" aria-label="Scroll to top">
+            <i data-lucide="arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
